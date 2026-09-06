@@ -1,0 +1,198 @@
+/* ==========================================
+   Button Components
+   ========================================== */
+
+/* Primary White Button */
+.btn-white {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-white);
+  color: var(--color-primary-dark);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 13px 26px;
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.btn-white:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  background: var(--color-bg-subtle);
+}
+
+/* CTA Button */
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-white);
+  color: var(--color-primary-dark);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 13px 32px;
+  border-radius: var(--radius-pill);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: var(--transition);
+}
+
+.cta-btn:hover {
+  background: var(--color-bg-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Primary Dark Button */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--color-primary-dark);
+  color: var(--color-white);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 13px 28px;
+  border-radius: var(--radius-pill);
+  transition: var(--transition);
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: var(--color-primary-light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Secondary / Outline Button */
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: transparent;
+  color: var(--color-primary-dark);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 26px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--color-border);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  border-color: var(--color-primary-dark);
+  background: var(--color-bg-subtle);
+  transform: translateY(-1px);
+}
+
+/* Small Button */
+.btn-sm {
+  padding: 8px 18px;
+  font-size: 13px;
+}
+
+/* Danger Button */
+.btn-danger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--color-danger);
+  color: var(--color-white);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 13px 28px;
+  border-radius: var(--radius-pill);
+  transition: var(--transition);
+  border: none;
+  cursor: pointer;
+}
+
+.btn-danger:hover {
+  background: #dc2626;
+  transform: translateY(-2px);
+}
+
+/* Success Button */
+.btn-success {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--color-success);
+  color: var(--color-white);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 13px 28px;
+  border-radius: var(--radius-pill);
+  transition: var(--transition);
+  border: none;
+  cursor: pointer;
+}
+
+.btn-success:hover {
+  background: #059669;
+  transform: translateY(-2px);
+}
+
+/* Icon-only Button */
+.btn-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+  border: 1px solid var(--color-border);
+  background: var(--color-white);
+  color: var(--color-text-muted);
+}
+
+.btn-icon:hover {
+  border-color: var(--color-primary-dark);
+  color: var(--color-primary-dark);
+  background: var(--color-bg-subtle);
+}
+
+/* Carousel Arrows (from template) */
+.carousel-arrows {
+  display: flex;
+  gap: 12px;
+}
+
+.carousel-arrow {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.carousel-arrow.prev {
+  border: 1px solid #cbd5e1;
+  color: var(--color-text-muted);
+  background: var(--color-white);
+}
+
+.carousel-arrow.prev:hover {
+  border-color: var(--color-primary-dark);
+  color: var(--color-primary-dark);
+}
+
+.carousel-arrow.next {
+  background: var(--color-primary-dark);
+  color: var(--color-white);
+}
+
+.carousel-arrow.next:hover {
+  background: var(--color-primary-light);
+}

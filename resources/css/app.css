@@ -1,0 +1,29 @@
+/* ==========================================
+   NusaWisata - Main Stylesheet
+   Sistem Rekomendasi Wisata Indonesia
+   ========================================== */
+
+/* Design Tokens */
+@import './variables.css';
+
+/* Base & Reset */
+@import './base.css';
+
+/* Components */
+@import './components/navbar.css';
+@import './components/buttons.css';
+@import './components/cards.css';
+@import './components/forms.css';
+@import './components/badges.css';
+@import './components/map.css';
+@import './components/tables.css';
+@import './components/modal.css';
+@import './components/notifications.css';
+
+/* Pages */
+@import './pages/home.css';
+@import './pages/destination.css';
+@import './pages/auth.css';
+@import './pages/dashboard.css';
+@import './pages/recommendation.css';
+@import './pages/admin.css';

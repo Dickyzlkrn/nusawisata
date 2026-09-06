@@ -1,0 +1,63 @@
+/* ==========================================
+   Modal Component
+   ========================================== */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modal-overlay.active {
+  display: flex;
+}
+
+.modal-content {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  padding: 36px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--color-bg-subtle);
+  color: var(--color-text-main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition);
+  font-size: 16px;
+}
+
+.modal-close:hover {
+  background: var(--color-border);
+}
+
+.modal-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin-bottom: 8px;
+}
+
+.modal-desc {
+  font-size: 14px;
+  color: var(--color-text-muted);
+  margin-bottom: 24px;
+}

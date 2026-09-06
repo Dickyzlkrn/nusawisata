@@ -1,0 +1,75 @@
+/* ==========================================
+   Recommendation Page
+   ========================================== */
+
+.recommendation-section {
+  padding: 40px 0 80px 0;
+}
+
+.recommendation-header {
+  margin-bottom: 40px;
+}
+
+.recommendation-header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin-bottom: 8px;
+}
+
+.recommendation-header p {
+  font-size: 15px;
+  color: var(--color-text-muted);
+}
+
+.recommendation-preview-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  background: #fffbeb;
+  color: #92400e;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.recommendation-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+/* Recommendation Card extends dest-list-card */
+.recommendation-card .predicted-rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--color-text-muted);
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid var(--color-border-light);
+}
+
+.recommendation-card .predicted-rating strong {
+  color: var(--color-primary-dark);
+  font-weight: 700;
+}
+
+@media (max-width: 1024px) {
+  .recommendation-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .recommendation-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .recommendation-header h1 {
+    font-size: 24px;
+  }
+}

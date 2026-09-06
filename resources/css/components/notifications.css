@@ -1,0 +1,114 @@
+/* ==========================================
+   NusaWisata - SweetAlert2 Custom Styling
+   Clean, Minimal, Elegant Typography
+   ========================================== */
+
+div:where(.swal2-container) {
+  z-index: 10000 !important;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  background-color: rgba(15, 23, 42, 0.5) !important;
+}
+
+div:where(.swal2-container) div:where(.swal2-popup.nusa-swal-popup) {
+  font-family: var(--font-family, 'Plus Jakarta Sans', sans-serif) !important;
+  border-radius: var(--radius-xl, 24px) !important;
+  padding: 32px 28px !important;
+  box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.25), 0 0 0 1px rgba(226, 232, 240, 0.8) !important;
+  background: var(--color-white, #ffffff) !important;
+  color: var(--color-text-main, #1e293b) !important;
+  max-width: 440px !important;
+  width: 90% !important;
+}
+
+div:where(.swal2-container) .nusa-swal-title {
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  color: var(--color-primary-dark, #0f172a) !important;
+  letter-spacing: -0.02em !important;
+  padding: 0 0 8px 0 !important;
+  margin: 0 !important;
+}
+
+div:where(.swal2-container) .nusa-swal-text {
+  font-size: 14px !important;
+  color: var(--color-text-muted, #64748b) !important;
+  line-height: 1.6 !important;
+  padding: 0 !important;
+  margin: 8px 0 24px 0 !important;
+}
+
+div:where(.swal2-container) .nusa-swal-actions {
+  display: flex !important;
+  gap: 12px !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  justify-content: center !important;
+}
+
+div:where(.swal2-container) .nusa-swal-confirm-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: var(--color-primary-dark, #0f172a) !important;
+  color: #ffffff !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  padding: 11px 24px !important;
+  border-radius: var(--radius-pill, 9999px) !important;
+  border: none !important;
+  cursor: pointer !important;
+  transition: var(--transition, all 0.2s ease) !important;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.15) !important;
+}
+
+div:where(.swal2-container) .nusa-swal-confirm-btn:hover {
+  background: var(--color-primary-light, #334155) !important;
+  transform: translateY(-1px) !important;
+}
+
+div:where(.swal2-container) .nusa-swal-confirm-danger-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: #ef4444 !important;
+  color: #ffffff !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  padding: 11px 24px !important;
+  border-radius: var(--radius-pill, 9999px) !important;
+  border: none !important;
+  cursor: pointer !important;
+  transition: var(--transition, all 0.2s ease) !important;
+  box-shadow: 0 2px 6px rgba(239, 68, 68, 0.25) !important;
+}
+
+div:where(.swal2-container) .nusa-swal-confirm-danger-btn:hover {
+  background: #dc2626 !important;
+  transform: translateY(-1px) !important;
+}
+
+div:where(.swal2-container) .nusa-swal-cancel-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: var(--color-bg-subtle, #f8fafc) !important;
+  color: var(--color-text-main, #1e293b) !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  padding: 11px 24px !important;
+  border-radius: var(--radius-pill, 9999px) !important;
+  border: 1px solid var(--color-border, #e2e8f0) !important;
+  cursor: pointer !important;
+  transition: var(--transition, all 0.2s ease) !important;
+}
+
+div:where(.swal2-container) .nusa-swal-cancel-btn:hover {
+  background: var(--color-bg-hover, #f1f5f9) !important;
+}
+
+div:where(.swal2-icon) {
+  margin: 0 auto 16px auto !important;
+  transform: scale(0.85) !important;
+}

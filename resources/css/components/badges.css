@@ -1,0 +1,80 @@
+/* ==========================================
+   Badge Components
+   ========================================== */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.badge-dark {
+  background: var(--color-primary-dark);
+  color: var(--color-white);
+}
+
+.badge-light {
+  background: var(--color-bg-subtle);
+  color: var(--color-text-main);
+  border: 1px solid var(--color-border);
+}
+
+.badge-glass {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(6px);
+  color: var(--color-primary-dark);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 11px;
+  padding: 6px 14px;
+}
+
+.badge-success {
+  background: #ecfdf5;
+  color: #065f46;
+}
+
+.badge-warning {
+  background: #fffbeb;
+  color: #92400e;
+}
+
+.badge-danger {
+  background: #fef2f2;
+  color: #991b1b;
+}
+
+.badge-info {
+  background: #eff6ff;
+  color: #1e40af;
+}
+
+/* Rating Badge */
+.badge-rating {
+  background: var(--color-star-filled);
+  color: var(--color-white);
+  font-weight: 700;
+  padding: 4px 10px;
+  gap: 4px;
+}
+
+.badge-rating svg {
+  width: 12px;
+  height: 12px;
+  fill: currentColor;
+}
+
+/* Category Badge */
+.badge-category {
+  background: var(--color-bg-subtle);
+  color: var(--color-text-main);
+  border: 1px solid var(--color-border);
+  font-weight: 600;
+  text-transform: capitalize;
+}

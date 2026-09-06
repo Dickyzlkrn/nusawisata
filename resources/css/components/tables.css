@@ -1,0 +1,102 @@
+/* ==========================================
+   Table Components
+   ========================================== */
+
+.data-table-wrapper {
+  overflow-x: auto;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-white);
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table thead {
+  background: var(--color-bg-subtle);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.data-table th {
+  padding: 14px 20px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-text-muted);
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.data-table td {
+  padding: 16px 20px;
+  font-size: 14px;
+  color: var(--color-text-main);
+  border-bottom: 1px solid var(--color-border-light);
+  vertical-align: middle;
+}
+
+.data-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.data-table tbody tr {
+  transition: var(--transition);
+}
+
+.data-table tbody tr:hover {
+  background: var(--color-bg-subtle);
+}
+
+.table-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.table-actions a,
+.table-actions button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: var(--radius-sm);
+  transition: var(--transition);
+  color: var(--color-text-muted);
+}
+
+.table-actions a:hover {
+  background: var(--color-bg-subtle);
+  color: var(--color-primary-dark);
+}
+
+.table-actions .action-edit:hover {
+  color: var(--color-info);
+}
+
+.table-actions .action-delete:hover {
+  color: var(--color-danger);
+  background: #fef2f2;
+}
+
+/* Empty State */
+.table-empty {
+  text-align: center;
+  padding: 60px 24px;
+  color: var(--color-text-muted);
+}
+
+.table-empty svg {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 16px auto;
+  color: var(--color-text-light);
+}
+
+.table-empty p {
+  font-size: 15px;
+  font-weight: 500;
+}

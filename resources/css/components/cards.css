@@ -1,0 +1,380 @@
+/* ==========================================
+   Card Components
+   ========================================== */
+
+/* Destination Card (overlay style) */
+.dest-card {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: var(--shadow-card);
+  transition: var(--transition);
+}
+
+.dest-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.dest-card-top {
+  height: 290px;
+}
+
+.dest-card-bottom {
+  height: 380px;
+}
+
+.dest-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.dest-card:hover img {
+  transform: scale(1.05);
+}
+
+.dest-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: var(--gradient-overlay);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 24px;
+  color: var(--color-white);
+}
+
+.dest-card-overlay h4 {
+  font-size: 19px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: var(--color-white);
+}
+
+.dest-card-overlay p {
+  font-size: 13px;
+  color: var(--color-white-90);
+  line-height: 1.45;
+}
+
+/* Deal Card */
+.deal-card {
+  position: relative;
+  height: 260px;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 12px 28px -10px rgba(0, 0, 0, 0.12);
+  transition: var(--transition);
+}
+
+.deal-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 38px -12px rgba(0, 0, 0, 0.2);
+}
+
+.deal-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.deal-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: var(--gradient-deal);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 36px 40px;
+  color: var(--color-white);
+}
+
+.deal-title {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.25;
+  max-width: 200px;
+}
+
+.deal-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.deal-number {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.deal-unit {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.9;
+}
+
+/* Adventure Card */
+.adventure-card {
+  position: relative;
+  height: 330px;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: 0 14px 30px -10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.adventure-card:hover {
+  transform: translateY(-4px);
+}
+
+.adventure-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.adventure-badge {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(6px);
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-primary-dark);
+}
+
+.adventure-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(15, 23, 42, 0.8) 100%);
+  color: var(--color-white);
+}
+
+.adventure-price {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-white);
+}
+
+/* Blog / Article Card */
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.blog-card-img {
+  width: 100%;
+  height: 250px;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  margin-bottom: 16px;
+  box-shadow: var(--shadow-card);
+}
+
+.blog-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.blog-card:hover .blog-card-img img {
+  transform: scale(1.04);
+}
+
+.blog-card-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-primary-dark);
+  margin-bottom: 8px;
+  transition: color 0.2s ease;
+}
+
+.blog-card:hover .blog-card-title {
+  color: var(--color-accent);
+}
+
+.blog-card-date {
+  font-size: 12px;
+  color: var(--color-text-muted);
+  font-weight: 500;
+}
+
+/* Stat Card (Dashboard) */
+.stat-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: var(--transition);
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card);
+}
+
+.stat-card-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  background: var(--color-bg-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary-dark);
+}
+
+.stat-card-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.stat-card-value {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--color-primary-dark);
+  letter-spacing: -0.02em;
+}
+
+.stat-card-label {
+  font-size: 14px;
+  color: var(--color-text-muted);
+  font-weight: 500;
+}
+
+/* Destination Detail Card */
+.detail-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+}
+
+/* Service / Feature Item */
+.service-item {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.service-icon {
+  width: 44px;
+  height: 44px;
+  color: var(--color-primary-dark);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.service-icon svg {
+  width: 32px;
+  height: 32px;
+  stroke-width: 1.7;
+}
+
+.service-item h4 {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+}
+
+.service-item p {
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--color-text-muted);
+}
+
+/* Testimonial Card */
+.testimonial-card {
+  position: relative;
+  z-index: 2;
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: 36px 44px;
+  max-width: 580px;
+  text-align: center;
+  box-shadow: var(--shadow-dark);
+}
+
+.testimonial-quote {
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--color-primary-light);
+  margin-bottom: 22px;
+  font-weight: 500;
+}
+
+.testimonial-user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.testimonial-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial-meta {
+  text-align: left;
+}
+
+.testimonial-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+}
+
+.testimonial-role {
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+@media (max-width: 768px) {
+  .dest-card-top,
+  .dest-card-bottom {
+    height: 260px;
+  }
+
+  .deal-card {
+    height: 220px;
+  }
+
+  .deal-card-overlay {
+    padding: 24px;
+  }
+
+  .deal-title {
+    font-size: 20px;
+  }
+
+  .deal-number {
+    font-size: 36px;
+  }
+}
